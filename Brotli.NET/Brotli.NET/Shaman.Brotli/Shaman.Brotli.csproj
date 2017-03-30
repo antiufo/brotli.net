@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <VersionPrefix>1.0.11.0</VersionPrefix>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFrameworks>netstandard1.3;net46</TargetFrameworks>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <AssemblyOriginatorKeyFile>..\BrotliKey.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>

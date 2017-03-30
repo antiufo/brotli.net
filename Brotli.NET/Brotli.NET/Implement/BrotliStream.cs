@@ -214,8 +214,8 @@ namespace Brotli
 
         public void TruncateBeginning(MemoryStream ms, int numberOfBytesToRemove)
         {
-            byte[] buf = ms.GetBuffer();
-            Buffer.BlockCopy(buf, numberOfBytesToRemove, buf, 0, (int)ms.Length - numberOfBytesToRemove);
+            if(!ms.TryGetBuffer(out var buf)) throw new Exception();
+            Buffer.BlockCopy(buf.Array, buf.Offset + numberOfBytesToRemove, buf.Array, buf.Offset, (int)ms.Length - numberOfBytesToRemove);
             ms.SetLength(ms.Length - numberOfBytesToRemove);
         }
 
