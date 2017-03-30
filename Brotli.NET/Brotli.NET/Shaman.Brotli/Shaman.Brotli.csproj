@@ -1,16 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <VersionPrefix>1.0.11.0</VersionPrefix>
+    <VersionPrefix>1.0.11.1</VersionPrefix>
     <TargetFrameworks>netstandard1.3;net46</TargetFrameworks>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <AssemblyOriginatorKeyFile>..\BrotliKey.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <Description>Brotli for netstandard and strongly named assembly.</Description>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="..\**\*.cs" Exclude="..\obj\**\*.cs;..\Shaman.Brotli\**\*.cs;..\Properties\**\*.cs" />
   </ItemGroup>
-
 </Project>
